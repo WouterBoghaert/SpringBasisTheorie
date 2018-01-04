@@ -32,9 +32,12 @@ class Main {
 			Teller teller2 = context.getBean("teller2", Teller.class);
 			teller2.verhoog();
 			context.getBean("teller2", Teller.class).verhoog();
-			
+		}
+		
+		try(ClassPathXmlApplicationContext context =
+			new ClassPathXmlApplicationContext("restclients.xml", "services.xml")) {
 			System.out.println(
-				context.getBean(EuroService.class).naarDollar(BigDecimal.valueOf(2)));
+					context.getBean(EuroService.class).naarDollar(BigDecimal.valueOf(2)));
 		}
 	}
 }
