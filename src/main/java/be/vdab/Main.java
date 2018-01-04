@@ -20,6 +20,8 @@ class Main {
 			System.out.println(objectB.getTelefoonNrHelpDesk());
 			System.out.println(objectB.getAantalPogingenUpdateKlant());
 			System.out.println(context.getBean(HelpdeskMedewerkers.class));
+			System.out.println(context.getBean(ClassA.class).getWebMasterEmailAdres());
+			System.out.println(context.getBean(ClassA.class).getWebsiteGestart());
 		}
 	}
 }
