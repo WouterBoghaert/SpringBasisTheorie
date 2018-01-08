@@ -7,18 +7,18 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.springframework.beans.factory.annotation.Qualifier;
+/*import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Component;*/
 
-@Qualifier("ECB")
-@Component
+/*@Qualifier("ECB")
+@Component*/
 public class ECBKoersenClient implements KoersenClient {
 	private static final Logger LOGGER = 
 		Logger.getLogger(ECBKoersenClient.class.getName());
 	private final URL url;
 	
-	public ECBKoersenClient(@Value("${ecbKoersenURL}") URL url) {
+	public ECBKoersenClient(/*@Value("${ecbKoersenURL}")*/ URL url) {
 		this.url = url;
 	}
 	
