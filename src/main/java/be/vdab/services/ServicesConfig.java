@@ -17,3 +17,5 @@ public class ServicesConfig {
 		return new EuroService(koersenClient);
 	}
 }
+
+

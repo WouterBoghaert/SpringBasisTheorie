@@ -13,12 +13,12 @@ import org.springframework.stereotype.Component;*/
 
 /*@Qualifier("Fixer")
 @Component*/
-public class FixerKoersenClient implements KoersenClient {
+class FixerKoersenClient implements KoersenClient {
 	private static final Logger LOGGER =
 		Logger.getLogger(FixerKoersenClient.class.getName());
 	private final URL url;
 	
-	public FixerKoersenClient(/*@Value("${fixerKoersenURL}")*/ URL url) {
+	FixerKoersenClient(/*@Value("${fixerKoersenURL}")*/ URL url) {
 		this.url = url;
 	}
 	
